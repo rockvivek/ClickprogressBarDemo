@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4yK-1f-9AE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Another View Controller-->
+        <scene sceneID="6ZX-bP-Ux6">
+            <objects>
+                <viewController storyboardIdentifier="AnotherViewController" id="4yK-1f-9AE" customClass="AnotherViewController" customModule="ProgressBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Tp-hr-tlv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlv-2V-4ga">
+                                <rect key="frame" x="148" y="637" width="118" height="54"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="tintColor" systemColor="systemTealColor"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButton:" destination="4yK-1f-9AE" eventType="touchUpInside" id="M0l-mI-1yT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vc-Z7-XTb">
+                                <rect key="frame" x="37" y="108" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iNG-hp-PEn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iNG-hp-PEn" firstAttribute="bottom" secondItem="8Vc-Z7-XTb" secondAttribute="bottom" constant="733" id="2pA-ww-tMG"/>
+                            <constraint firstItem="rlv-2V-4ga" firstAttribute="leading" secondItem="iNG-hp-PEn" secondAttribute="leading" constant="148" id="9LO-cQ-cwA"/>
+                            <constraint firstItem="iNG-hp-PEn" firstAttribute="bottom" secondItem="rlv-2V-4ga" secondAttribute="bottom" constant="171" id="IVe-6u-WMe"/>
+                            <constraint firstItem="8Vc-Z7-XTb" firstAttribute="top" secondItem="iNG-hp-PEn" secondAttribute="top" constant="64" id="Q7D-RF-Dib"/>
+                            <constraint firstItem="8Vc-Z7-XTb" firstAttribute="leading" secondItem="iNG-hp-PEn" secondAttribute="leading" constant="37" id="Sex-X3-Eoh"/>
+                            <constraint firstItem="rlv-2V-4ga" firstAttribute="top" secondItem="iNG-hp-PEn" secondAttribute="top" constant="593" id="mOP-D1-0Cy"/>
+                            <constraint firstItem="iNG-hp-PEn" firstAttribute="trailing" secondItem="8Vc-Z7-XTb" secondAttribute="trailing" constant="335" id="r6N-jD-Gce"/>
+                            <constraint firstItem="iNG-hp-PEn" firstAttribute="trailing" secondItem="rlv-2V-4ga" secondAttribute="trailing" constant="148" id="tvi-Tv-AVx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="8Vc-Z7-XTb" id="OdI-Nu-Eg1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSP-Tq-3xz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-555.07246376811599" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
