@@ -1,7 +1,7 @@
 # ClickprogressBarDemo
-##This is a circular progress bar that increases 3.34 % in on click
+## This is a circular progress bar that increases 3.34 % in on click
 
-###the circular progress bar is made using the UIView and UIBezierPath by defining its radius, startpoint, endpoint, arccenter and rotation direction
+### the circular progress bar is made using the UIView and UIBezierPath by defining its radius, startpoint, endpoint, arccenter and rotation direction
 
             let circle = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
 
